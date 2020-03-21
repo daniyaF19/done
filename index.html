@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <a href="#">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div class="head-content">
+          <img
+            src="746204ee26f55a0be8b2aa349d9e17dc.jpg"
+            height="300px"
+            width="300px"
+          />
+          <p class="name">Daniya Firdose</p>
+          <p class="desc">I'm a passionate coder!!!</p>
+        </div>
+      </div>
+      <div class="about-section" id="about">
+        <h2>About Us</h2>
+        <p>
+          I'm Daniya Firdose. I'm a Front-end developer. I'm passionate about
+          coding.I love to share my knowlege to others.I also love the logic and
+          structure of coding and always strive to write elegant and efficient
+          code. Nothing brings me more pleasure than making something out of
+          nothing,Even when the results are far from my ideal expectations,I
+          find the whole ceremony of creativity completely enthralling. My
+          portfolio is a representation of all that I've learned and
+          accomplished!!!
+        </p>
+      </div>
+      <div class="skills-section" id="skills">
+        <h2>Skills</h2>
+        <img src="html5.jpg" />
+        <img src="css3.jpg" />
+        <img src="github.jpg" />
+        <img src="js.jpg" />
+      </div>
+      <div class="contact-section" id="contact">
+        <span>Contact Us</span>
+        <div class="inputs">
+          <input type="text" class="inp-name" placeholder="Name" />
+          <input type="text" class="inp-mail" placeholder="Your Email" />
+          <textarea rows="10" cols="40" placeholder="Your Message"></textarea>
+          <input type="button" class="inp-btn" value="Submit" />
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Daniya Web Development</p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".toggle").click(function() {
+        $(".navbar").slideToggle();
+      });
+      $(window).resize(function() {
+        if ($(window).width() > 768) {
+          $(".navbar").show();
+        } else {
+          $(".navbar").hide();
+        }
+      });
+    });
+  </script>
+</html>
