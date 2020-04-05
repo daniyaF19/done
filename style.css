@@ -76,7 +76,7 @@ body {
   font-size: 30px;
   font-family: roboto;
   width: 1000px;
-  background: repeating-linear-gradient(90deg, black, white);
+  background: repeating-linear-gradient(90deg, white, gray);
   text-align: center;
   margin: 0 auto;
   border: 2px solid gray;
@@ -109,7 +109,7 @@ body {
 
 .contact-section {
   height: 56vh;
-  background-color: gray;
+  background: repeating-linear-gradient(90deg, white, gray);
   text-align: center;
 }
 
